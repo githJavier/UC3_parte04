@@ -1,0 +1,13 @@
+{% extends 'index.html' %}
+{% block title %}
+    Primos
+{% endblock %}
+
+{% block content %}
+<h2>Primos [{{a}},{{b}}]</h2>
+    <ul>
+    {% for i in primos %}
+        <li>{{i}}</li>
+    {% endfor %}
+    </ul>
+{% endblock %}
